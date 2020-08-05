@@ -416,7 +416,7 @@ There are some restrictions when using a `gcePersistentDisk`:
 A feature of PD is that they can be mounted as read-only by multiple consumers
 simultaneously.  This means that you can pre-populate a PD with your dataset
 and then serve it in parallel from as many Pods as you need.  Unfortunately,
-PDs can only be mounted by a single consumer in read-write mode - no
+PDs can only be mounted by a single producer in read-write mode - no
 simultaneous writers allowed.
 
 Using a PD on a Pod controlled by a ReplicationController will fail unless
